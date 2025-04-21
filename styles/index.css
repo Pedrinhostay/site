@@ -11,19 +11,25 @@
     --bold: 700;
     --extra-bold: 900;
 }
+
 body::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: var(--bg-primary);        /* color of the tracking area */
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: var(--color-secondary);    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid var(--color-secondary);  /* creates padding around scroll thumb */
-  }
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color-secondary);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid var(--color-secondary);
+    /* creates padding around scroll thumb */
+}
 
 
 html,
@@ -36,6 +42,7 @@ body {
 .container {
     max-width: 1280px;
     margin: 0 auto;
+    padding: 10px;
 }
 
 header {
@@ -71,6 +78,7 @@ ul {
     gap: 40px;
     list-style: none;
     font-size: 14px;
+
     li {
         transition: all 300ms ease;
     }
@@ -240,7 +248,8 @@ ul {
         box-shadow: 0px 0px 1px 0px var(--bg-primary);
         border-radius: 100px;
     }
-    img{
+
+    img {
         width: 80%;
     }
 }
@@ -480,7 +489,7 @@ ul {
     color: #333;
     flex-shrink: 0;
 
-    img{
+    img {
         width: 100%;
         height: 100%;
         border-radius: 12px;
@@ -502,7 +511,6 @@ ul {
     display: flex;
     align-items: center;
     flex-direction: column;
-    position: relative;
     justify-content: space-between;
     gap: 120px;
 }
@@ -527,13 +535,15 @@ ul {
 
 }
 
-.group-contacts-info{
+.group-contacts-info {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.card-contacts{
+.card-contacts {
     display: flex;
     gap: 20px;
     width: 620px;
@@ -542,9 +552,10 @@ ul {
     background-color: var(--color-secondary);
     box-shadow: 0px 0px 4px 0px var(--bg-primary);
 
-    
+
 }
-.card-contacts-circle{
+
+.card-contacts-circle {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -554,19 +565,21 @@ ul {
     background-color: var(--bg-primary);
     cursor: pointer;
 }
-.card-contacts-footer{
+
+.card-contacts-footer {
     width: 100%;
     display: flex;
 
     justify-content: space-between;
     align-items: center;
 }
-.card-contacts-midias{
+
+.card-contacts-midias {
     display: flex;
     gap: 10px;
 }
 
-footer{
+footer {
     margin-top: 200px;
     background-color: var(--bg-primary);
     display: flex;
@@ -575,4 +588,106 @@ footer{
     flex-direction: column;
     padding: 80px;
     gap: 20px;
+}
+
+@media (max-width: 1280px) {
+    .about {}
+
+    .title-about {
+
+
+        .h3 {}
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        span {}
+    }
+
+}
+
+@media (max-width: 1145px) {
+    .about-img {
+        display: none;
+    }
+
+    .title-about {
+        h1 {
+            font-size: 45px;
+        }
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .navigation {
+        display: none;
+    }
+
+}
+
+@media (max-width: 832px) {
+    .title-contacts{
+        text-align: center;
+    }
+
+    .title {
+        h1 {
+            font-size: 62px;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+
+
+}
+
+@media (max-width: 672px) {
+    .title-about{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1{
+            font-size: 36px;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+    }
+    .group-about-info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .title-projects{
+        text-align: center;
+    }
+    .card-contacts{
+        width: 100%;
+    }
+    .title {
+        h1 {
+            font-size: 55px;
+        }
+
+        h2 {
+            font-size: 36px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+
 }
